@@ -1,0 +1,83 @@
+<div>
+<mat-toolbar class="row" >
+<div class="row">
+   <mat-list-item>
+    <button mat-menu-item class ='homestyle'> <img src = '../../assets/images/homes-06.png'>  </button>
+  </mat-list-item>
+
+  <mat-list-item>
+    <button mat-menu-item [matMenuTriggerFor]="billsmenu" #menuTrigger="matMenuTrigger" >Administration  </button>
+  </mat-list-item>
+  <mat-menu #billsmenu="matMenu" [overlapTrigger]="false"  >
+    <button mat-menu-item [routerLink] = "['/home']" >
+      <span >Roles Management</span>
+    </button>
+    <button mat-menu-item [routerLink] = "['/user-management']">
+     <span>User Management</span>
+    </button>
+    <button mat-menu-item>
+      <span >Facility Management</span>
+    </button>
+    <button mat-menu-item>
+      <span >Data Load Utility</span>
+    </button>
+    <button mat-menu-item>
+      <span >Batch Job Utility</span>
+    </button>
+    <button mat-menu-item>
+      <span >Maintenance window</span>
+    </button>
+
+  </mat-menu>
+
+  <mat-list-item>
+    <button mat-menu-item [matMenuTriggerFor]="claimsmenu">Content Management <mat-icon>keyboard_arrow_down</mat-icon> </button>
+  </mat-list-item>
+  <mat-menu #claimsmenu="matMenu" [overlapTrigger]="false">
+    <button mat-menu-item>
+      <span>Top Stories</span>
+    </button>
+    <button mat-menu-item>
+      <span>Document Library </span>
+    </button>
+  </mat-menu>
+
+  <mat-list-item>
+    <button mat-menu-item [matMenuTriggerFor]="mcsMenu">Data Request Management <mat-icon>keyboard_arrow_down</mat-icon> </button>
+  </mat-list-item>
+  <mat-menu #mcsMenu="matMenu" [overlapTrigger]="false">
+    <button mat-menu-item>
+      <span>Manage Data Requests</span>
+    </button>
+    <button mat-menu-item>
+      <span>Submit Responses</span>
+    </button>
+    <button mat-menu-item>
+      <span>View Responses</span>
+    </button>
+  </mat-menu>
+
+  <mat-list-item>
+    <button mat-menu-item [matMenuTriggerFor]="referralsmenu">Report <mat-icon>keyboard_arrow_down</mat-icon></button>
+  </mat-list-item>
+  <mat-menu #referralsmenu="matMenu" [overlapTrigger]="false">
+    <button mat-menu-item>
+      <span>Manage Report</span>
+    </button>
+  </mat-menu>
+
+  <mat-list-item>
+    <button mat-menu-item [matMenuTriggerFor]="DRmenu">Broadcast <mat-icon>keyboard_arrow_down</mat-icon> </button>
+  </mat-list-item>
+  <mat-menu #DRmenu="matMenu" [overlapTrigger]="false">
+    <button mat-menu-item>
+      <span>New broadcast</span>
+    </button>
+    <button mat-menu-item>
+      <span>Broadcast History </span>
+    </button>
+  </mat-menu>
+</div>
+</mat-toolbar>
+</div>
+

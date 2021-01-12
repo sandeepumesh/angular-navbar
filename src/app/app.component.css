@@ -1,3 +1,21 @@
-p {
-  font-family: Lato;
+/* You can add global styles to this file, and also import other style files */
+.container-fluid {
+  padding-top: 20px;
+
 }
+
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+  .row.content {height: 450px}
+
+  /* Set gray background color and 100% height */
+  .sidenav {
+    padding-top: 20px;
+
+  }
+
+  /* Set black background color, white text and some padding */
+  footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+  }
